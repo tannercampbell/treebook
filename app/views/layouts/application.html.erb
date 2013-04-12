@@ -7,6 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+	<div class="navbar">
+	    <div class="navbar-inner">
+		    <a class="brand" href="#">TBook</a>
+		    <ul class="nav">
+			    <li><%= link_to "Home", new_status_path %></li>
+			    <li><%= link_to "All Statuses", statuses_path %></li>
+		    </ul>
+	    </div>
+    </div>
 
 <%= yield %>
 
